@@ -1,3 +1,5 @@
+import './sass/style.scss';
+
 const scoresList = document.getElementById('scores-list');
 
 const myScoreList = [

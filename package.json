@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "webpack",
-    "dev": "webpack serve --open --watch"
+    "dev": "webpack serve --open"
   },
   "jest": {
     "testEnvironment": "jsdom"
