@@ -10,7 +10,32 @@
 <script defer src="main.bundle.js"></script></head>
 
 <body>
+
  <h1 id="app-title">Leaderboard</h1>
+
+ <div class="wrapper">
+
+  <div class="template score-temp">
+   <h2 class="head-two">Recent Scores <input class="refresh-btn" type="button" value="Refresh" /></h2>
+   <ul id="scores-list"></ul>
+  </div>
+
+  <div class="template info-temp">
+   <h2 class="head-two">Add your score</h2>
+   <form id="myForm" action="#" method="post">
+    <label>
+    <input class="input-data" type="text" placeholder="Your name" name="name" required />
+  </label>
+    <label>
+    <input class="input-data" type="number" placeholder="Your score" name="score" required />
+  </label>
+    <input class="submit-btn" type="submit" value="Submit" />
+   </form>
+  </div>
+
+ </div>
+
+ <script src="./index.js"></script>
 </body>
 
 </html>
