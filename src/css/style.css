@@ -1,0 +1,75 @@
+h1 {
+  font-size: 45px;
+  margin: 0;
+  padding: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0 200px;
+}
+
+.template {
+  margin: 30px;
+}
+
+#scores-list {
+  border: 3px solid black;
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.data {
+  margin: 5px;
+}
+
+li:nth-child(even) {
+  background-color: rgba(89, 78, 78, 0.151);
+}
+
+.score-temp {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.refresh-btn {
+  font-size: 20px;
+  width: 30%;
+}
+
+.info-temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.submit-btn {
+  align-self: flex-end;
+  font-size: 20px;
+}
+
+.input-data {
+  font-size: 20px;
+}
+
+/* #sourceMappingURL=style.css.map */
