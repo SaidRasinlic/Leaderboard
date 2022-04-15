@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Clone GitHub repository `gh repo clone SaidRasinlic/Leaderboard`
-- Install the devDependencies `install npm`
+- Install the devDependencies `npm install`
 - Install additional Sass loader `npm install sass-loader sass webpack --save-dev`
 - Build the app `npm run build`
 - Run the app `npm run dev`
