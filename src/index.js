@@ -1,23 +1,35 @@
 import './sass/style.scss';
+import Leaderboard from './modules/leaderboard.js';
 
-const scoresList = document.getElementById('scores-list');
+// Declare and initialize empty ID that will hold our game ID from Local Storage
+let id = '';
 
-const myScoreList = [
-  { id: 0, name: 'James', score: 340 },
-  { id: 1, name: 'Elizabeth', score: 243 },
-  { id: 2, name: 'Rock', score: 324 },
-  { id: 3, name: 'Johnny', score: 643 },
-  { id: 4, name: 'Said', score: 983 },
-  { id: 5, name: 'Senad', score: 432 },
-  { id: 6, name: 'Lamija', score: 565 },
-  { id: 4, name: 'Emir', score: 547 },
-  { id: 4, name: 'George', score: 936 },
-];
+// Get game ID from Local Storage, if no game ID is created, create it!
+window.onload = async () => {
+  if (!localStorage.getItem('test')) {
+    id = await Leaderboard.getGameID();
+    localStorage.setItem('test', id);
+  } else {
+    id = localStorage.getItem('test');
+    // Load all players with name: score format
+    Leaderboard.load(id);
+  }
+};
 
-myScoreList.forEach((data) => {
-  myScoreList.sort((a, b) => a.index - b.index);
-  scoresList.innerHTML += `
-  <li id="${data.id}"><p class="data">${data.name}: ${data.score}</p>
-  </li>
-`;
+// Get DOM elements to manipulate them
+const name = document.querySelector('#name');
+const score = document.querySelector('#score');
+
+// Get form and add 'submit' EventListener
+document.querySelector('#myForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const playerScore = new Leaderboard(name.value, score.value);
+  Leaderboard.add(playerScore, id);
+  name.value = '';
+  score.value = '';
+});
+
+// Get refresh button and add 'click' EventListener
+document.querySelector('.refresh-btn').addEventListener('click', () => {
+  Leaderboard.load(id);
 });
