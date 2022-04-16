@@ -46,7 +46,7 @@ export default class Leaderboard {
       };
       await fetch(requestURL, requestOptions);
     }
-    this.load(id);
+    // this.load(id);
   }
 
   // Consuming JavaScript Fetch API, receiving data from a server with async & await function
