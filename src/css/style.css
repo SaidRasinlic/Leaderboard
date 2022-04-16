@@ -68,7 +68,7 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #d62929;
-  background-image:
+  background-image: /* stylelint-disable-line */
     -webkit-linear-gradient (
       90deg,
       transparent,
@@ -103,41 +103,49 @@ body {
 #scores-list li:first-child {
   color: #fff;
   font-size: 25px;
-  -webkit-animation: blinkingBackground 2s infinite;
-          animation: blinkingBackground 2s infinite;
+  -webkit-animation: blinkingbackground 2s infinite;
+  animation: blinkingbackground 2s infinite;
 }
 
-@-webkit-keyframes blinkingBackground {
+@-webkit-keyframes blinkingbackground {
   0% {
     background-color: #10c018;
   }
+
   25% {
     background-color: #1056c0;
   }
+
   50% {
     background-color: #ef0a1a;
   }
+
   75% {
     background-color: #254878;
   }
+
   100% {
     background-color: #04a1d5;
   }
 }
 
-@keyframes blinkingBackground {
+@keyframes blinkingbackground {
   0% {
     background-color: #10c018;
   }
+
   25% {
     background-color: #1056c0;
   }
+
   50% {
     background-color: #ef0a1a;
   }
+
   75% {
     background-color: #254878;
   }
+  
   100% {
     background-color: #04a1d5;
   }
