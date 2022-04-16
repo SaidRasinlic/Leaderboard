@@ -65,14 +65,10 @@ body {
   background-color: #f5f5f5;
 }
 
-::-webkit-scrollbar-thumb {
-  /* stylelint-disable-line */
-  border-radius: 10px;
-  /* stylelint-disable-line */
-  background-color: #d62929;
-  /* stylelint-disable-line */
-  background-image: -webkit-linear-gradient 90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent;
-  /* stylelint-disable-line */
+::-webkit-scrollbar-thumb { /* stylelint-disable-line */
+  border-radius: 10px; /* stylelint-disable-line */
+  background-color: #d62929; /* stylelint-disable-line */
+  background-image: -webkit-linear-gradient 90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent; /* stylelint-disable-line */
 }
 
 ::-moz-placeholder {
