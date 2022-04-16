@@ -68,8 +68,13 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #d62929;
-  background-image: -webkit-linear-gradient (
-    90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent
+  background-image:
+   -webkit-linear-gradient (
+    90deg,
+     transparent,
+     rgba(0, 0, 0, 0.4) 50%,
+      transparent,
+       transparent
   ); /* stylelint-disable-line */
 }
 
