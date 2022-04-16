@@ -30,8 +30,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  background-clip: text; /* stylelint-disable-line */
+  -webkit-background-clip: text; /* stylelint-disable-line */
 }
 
 .wrapper {
@@ -152,7 +152,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
-  background-clip: text;
+  background-clip: text; /* stylelint-disable-line */
 }
 
 .refresh-btn {

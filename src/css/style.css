@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -29,8 +30,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  background-clip: text; /* stylelint-disable-line */
+  -webkit-background-clip: text; /* stylelint-disable-line */
 }
 
 .wrapper {
@@ -67,7 +68,18 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #d62929;
-  background-image: -webkit-linear-gradient 90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent;
+  background-image:
+    -webkit-linear-gradient (
+      90deg,
+      transparent,
+      rgba(0, 0, 0, 0.4) 50%,
+      transparent,
+      transparent
+    );
+}
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.57);
 }
 
 :-webkit-scrollbar-track {
@@ -158,8 +170,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  -webkit-background-clip: text; /* stylelint-disable-line */
+  background-clip: text; /* stylelint-disable-line */
 }
 
 .refresh-btn {
@@ -223,10 +235,6 @@ body {
   padding: 5px;
   background-color: #fe6e00;
   border: 3px inset orange;
-}
-
-::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.57);
 }
 
 :-ms-input-placeholder {
