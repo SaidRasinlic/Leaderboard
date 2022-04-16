@@ -8,12 +8,13 @@ The leaderboard website displays scores submitted by different players. It also 
 
 - HTML
 - CSS
-- JS/ES6
+- JavaSript/ES6
 - Linters
 - NPM
 - Webpack
-- API
-- SASS
+- Babel
+- Fetch API
+- Sass
 
 ## Live Demo
 
@@ -25,12 +26,17 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Git/GitHub/VSCode/Linters/ES6/API/Webpack/SASS/NPM (Software Packages System)
+- Git/GitHub/VSCode/Linters/ES6/API/Webpack/Babel/Sass/NPM (Software Packages System)
 
 ### Setup
 
-- gh repo clone SaidRasinlic/Leaderboard
+- Clone GitHub repository `gh repo clone SaidRasinlic/Leaderboard`
+- Install the devDependencies `npm install`
+- Install additional Sass loader `npm install sass-loader sass webpack --save-dev`
+- Build the app `npm run build`
+- Run the app `npm run dev`
 
+*Congratulations, enjoy the application! It should be on http://localhost:8080/*
 ## Authors
 
 👤 **Said Rasinlic**
