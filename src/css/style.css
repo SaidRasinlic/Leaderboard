@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -69,12 +70,12 @@ body {
   background-color: #d62929;
   background-image: /* stylelint-disable-line */
     -webkit-linear-gradient (  /* stylelint-disable-line */
-    90deg,
-    transparent,
-    rgba(0, 0, 0, 0.4) 50%,
-    transparent,
-    transparent
-  );
+    90deg, /* stylelint-disable-line */
+    transparent, /* stylelint-disable-line */
+    rgba(0, 0, 0, 0.4) 50%, /* stylelint-disable-line */
+    transparent, /* stylelint-disable-line */
+    transparent /* stylelint-disable-line */
+  ); /* stylelint-disable-line */
 }
 
 ::-moz-placeholder {
@@ -103,22 +104,26 @@ body {
   color: #fff;
   font-size: 25px;
   -webkit-animation: blinkingbackground 2s infinite;
-          animation: blinkingbackground 2s infinite;
+  animation: blinkingbackground 2s infinite;
 }
 
 @-webkit-keyframes blinkingbackground {
   0% {
     background-color: #10c018;
   }
+
   25% {
     background-color: #1056c0;
   }
+
   50% {
     background-color: #ef0a1a;
   }
+
   75% {
     background-color: #254878;
   }
+  
   100% {
     background-color: #04a1d5;
   }

@@ -70,12 +70,12 @@ body {
   background-color: #d62929;
   background-image: /* stylelint-disable-line */
     -webkit-linear-gradient (  /* stylelint-disable-line */
-    90deg,
-    transparent,
-    rgba(0, 0, 0, 0.4) 50%,
-    transparent,
-    transparent
-  );
+    90deg, /* stylelint-disable-line */
+    transparent, /* stylelint-disable-line */
+    rgba(0, 0, 0, 0.4) 50%, /* stylelint-disable-line */
+    transparent, /* stylelint-disable-line */
+    transparent /* stylelint-disable-line */
+  ); /* stylelint-disable-line */
 }
 
 :-webkit-scrollbar-track {
