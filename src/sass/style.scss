@@ -69,13 +69,13 @@ body {
   border-radius: 10px;
   background-color: #d62929;
   background-image:
-  -webkit-linear-gradient (
-    90deg,
+    -webkit-linear-gradient (
+      90deg,
       transparent,
       rgba(0, 0, 0, 0.4) 50%,
       transparent,
       transparent
-    );
+      );
 }
 
 :-webkit-scrollbar-track {
@@ -104,20 +104,20 @@ body {
 
 @keyframes blinkingBackground {
   0% {
-  background-color: #10c018;
-  }
+    background-color: #10c018;
+      }
   25% {
-  background-color: #1056c0;
-  }
+    background-color: #1056c0;
+      }
   50% {
-   background-color: #ef0a1a;
-  }
+    background-color: #ef0a1a;
+      }
   75% {
-  background-color: #254878;
-  }
+    background-color: #254878;
+     }
   100% {
-  background-color: #04a1d5;
-  }
+    background-color: #04a1d5;
+     }
 }
 
 .score-temp {
