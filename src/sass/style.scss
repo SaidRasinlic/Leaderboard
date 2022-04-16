@@ -68,14 +68,13 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #d62929;
-  background-image:
-  -webkit-linear-gradient (
+  background-image: -webkit-linear-gradient (
     90deg,
     transparent,
-     rgba(0, 0, 0, 0.4) 50%,
-     transparent,
-     transparent
-     )
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent,
+    transparent
+    )
 }
 
 :-webkit-scrollbar-track {
@@ -109,7 +108,7 @@ body {
   }
   25%
   {
-     background-color: #1056c0;
+    background-color: #1056c0;
     }
   50%
   {
@@ -157,9 +156,9 @@ body {
 }
 
  .refresh-btn {
-  font-size: 20px;
-  width: 30%;
-  background-color: #f0820c;
+   font-size: 20px;
+   width: 30%;
+   background-color: #f0820c;
 }
 
 .btn-hover {
@@ -196,11 +195,11 @@ body {
 .submit-btn {
   align-self: flex-end;
   font-size: 20px;
-  width: 33%; 
+  width: 33%;
 }
 
 .submit-btn:hover {
-  width: 40%
+  width: 40%;
 }
 
 .info-temp {
