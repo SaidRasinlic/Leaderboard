@@ -1,5 +1,8 @@
-// import './sass/style.scss';
+import './sass/style.scss';
 import Leaderboard from './modules/leaderboard.js';
+import './assets/images/king-crown.svg';
+import './assets/images/king.png';
+import './assets/images/title.png';
 
 // Declare and initialize empty ID that will hold our game ID from Local Storage
 let id = '';
