@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-
 html {
   box-sizing: border-box;
 }
@@ -30,8 +29,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
-  background-clip: text; /* stylelint-disable-line */
-  -webkit-background-clip: text; /* stylelint-disable-line */
+  background-clip: text;
+  /* stylelint-disable-line */
+  -webkit-background-clip: text;
+  /* stylelint-disable-line */
 }
 
 .wrapper {
@@ -69,17 +70,13 @@ body {
   border-radius: 10px;
   background-color: #d62929;
   background-image: /* stylelint-disable-line */
-    -webkit-linear-gradient (
+    -webkit-linear-gradient (  /* stylelint-disable-line */
       90deg,
       transparent,
       rgba(0, 0, 0, 0.4) 50%,
       transparent,
       transparent
     );
-}
-
-::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.57);
 }
 
 :-webkit-scrollbar-track {
@@ -104,7 +101,7 @@ body {
   color: #fff;
   font-size: 25px;
   -webkit-animation: blinkingbackground 2s infinite;
-  animation: blinkingbackground 2s infinite;
+          animation: blinkingbackground 2s infinite;
 }
 
 @-webkit-keyframes blinkingbackground {
@@ -145,11 +142,12 @@ body {
   75% {
     background-color: #254878;
   }
-  
+
   100% {
     background-color: #04a1d5;
   }
 }
+
 .score-temp {
   display: flex;
   flex-direction: column;
@@ -178,8 +176,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
-  -webkit-background-clip: text; /* stylelint-disable-line */
-  background-clip: text; /* stylelint-disable-line */
+  -webkit-background-clip: text;
+          background-clip: text;
+  /* stylelint-disable-line */
 }
 
 .refresh-btn {
@@ -245,6 +244,10 @@ body {
   border: 3px inset orange;
 }
 
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.57);
+}
+
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.57);
 }
@@ -258,6 +261,4 @@ body {
   font-size: large;
   font-weight: bold;
   margin: 10px 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
