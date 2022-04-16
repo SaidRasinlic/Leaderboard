@@ -29,10 +29,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
-  background-clip: text;
-  /* stylelint-disable-line */
-  -webkit-background-clip: text;
-  /* stylelint-disable-line */
+  background-clip: text; /* stylelint-disable-line */
+  -webkit-background-clip: text;  /* stylelint-disable-line */
 }
 
 .wrapper {
@@ -71,12 +69,16 @@ body {
   background-color: #d62929;
   background-image: /* stylelint-disable-line */
     -webkit-linear-gradient (  /* stylelint-disable-line */
-      90deg,
-      transparent,
-      rgba(0, 0, 0, 0.4) 50%,
-      transparent,
-      transparent
-    );
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent,
+    transparent
+  );
+}
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.57);
 }
 
 :-webkit-scrollbar-track {
@@ -108,19 +110,15 @@ body {
   0% {
     background-color: #10c018;
   }
-
   25% {
     background-color: #1056c0;
   }
-
   50% {
     background-color: #ef0a1a;
   }
-
   75% {
     background-color: #254878;
   }
-
   100% {
     background-color: #04a1d5;
   }
@@ -177,8 +175,7 @@ body {
   background-size: cover;
   color: transparent;
   -webkit-background-clip: text;
-          background-clip: text;
-  /* stylelint-disable-line */
+  background-clip: text; /* stylelint-disable-line */
 }
 
 .refresh-btn {
@@ -244,10 +241,6 @@ body {
   border: 3px inset orange;
 }
 
-::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.57);
-}
-
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.57);
 }
@@ -261,4 +254,6 @@ body {
   font-size: large;
   font-weight: bold;
   margin: 10px 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
