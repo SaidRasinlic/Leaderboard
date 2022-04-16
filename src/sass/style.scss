@@ -68,13 +68,14 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #d62929;
-  background-image: -webkit-linear-gradient (
+  background-image:
+  -webkit-linear-gradient (
     90deg,
-    transparent,
-    rgba(0, 0, 0, 0.4) 50%,
-    transparent,
-    transparent
-    )
+      transparent,
+      rgba(0, 0, 0, 0.4) 50%,
+      transparent,
+      transparent
+    );
 }
 
 :-webkit-scrollbar-track {
@@ -98,30 +99,25 @@ body {
 #scores-list li:first-child {
   color: #fff;
   font-size: 25px;
-	animation: blinkingBackground 2s infinite;
+  animation: blinkingBackground 2s infinite;
 }
 
 @keyframes blinkingBackground {
-  0%
-  {
-    background-color: #10c018;
+  0% {
+  background-color: #10c018;
   }
-  25%
-  {
-    background-color: #1056c0;
-    }
-  50%
-  {
-     background-color: #ef0a1a;
+  25% {
+  background-color: #1056c0;
   }
-  75%
-  {
-    background-color: #254878;
+  50% {
+   background-color: #ef0a1a;
   }
-  100%
-  {
-     background-color: #04a1d5;
-    }
+  75% {
+  background-color: #254878;
+  }
+  100% {
+  background-color: #04a1d5;
+  }
 }
 
 .score-temp {
@@ -152,13 +148,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
-  background-clip: text; 
+  background-clip: text;
 }
 
- .refresh-btn {
-   font-size: 20px;
-   width: 30%;
-   background-color: #f0820c;
+.refresh-btn {
+  font-size: 20px;
+  width: 30%;
+  background-color: #f0820c;
 }
 
 .btn-hover {
@@ -168,13 +164,13 @@ body {
   font-size: 20px;
   color: #fff;
   cursor: pointer;
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-hover:focus {
@@ -183,9 +179,9 @@ body {
 
 .btn-hover:hover {
   background-position: 100% 0;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .refresh-btn:hover {
