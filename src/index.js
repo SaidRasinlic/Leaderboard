@@ -1,4 +1,4 @@
-import './sass/style.scss';
+// import './sass/style.scss';
 import Leaderboard from './modules/leaderboard.js';
 
 // Declare and initialize empty ID that will hold our game ID from Local Storage

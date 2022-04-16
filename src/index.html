@@ -5,6 +5,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./css/style.css">
  <title>Leaderboard</title>
 </head>
 
@@ -12,10 +13,11 @@
 
  <h1 id="app-title">Leaderboard</h1>
 
- <div class="wrapper">
+ <div class="king"><img id="king-crown" src="./img/king-crown.svg" alt="King Crown"></div>
 
+ <div class="wrapper">
   <div class="template score-temp">
-   <h2 class="head-two">Recent Scores <input class="refresh-btn" type="button" value="Refresh" /></h2>
+   <h2 class="head-two">Recent Scores <input class="refresh-btn btn-hover" type="button" value="Refresh" /></h2>
    <ul id="scores-list"></ul>
   </div>
 
@@ -28,11 +30,12 @@
     <label>
     <input class="input-data" id="score" type="number" placeholder="Your score" name="score" required />
   </label>
-    <input class="submit-btn" type="submit" value="Submit" />
+    <input class="submit-btn btn-hover" type="submit" value="Submit" />
    </form>
   </div>
 
  </div>
+ <script type="module" src="./index.js"></script>
 </body>
 
 </html>
