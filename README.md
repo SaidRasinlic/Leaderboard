@@ -2,7 +2,7 @@
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ![Video](https://user-images.githubusercontent.com/57558480/163695891-8f3560c6-5241-43d7-874e-eb86edbdbad7.mp4)
-https://user-images.githubusercontent.com/57558480/163695891-8f3560c6-5241-43d7-874e-eb86edbdbad7.mp4
+
 
 ## Built With
 
