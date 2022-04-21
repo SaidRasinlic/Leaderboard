@@ -46,7 +46,7 @@ export default class Leaderboard {
       };
       await fetch(requestURL, requestOptions);
     }
-    // this.load(id);
+    this.load(id);
   }
 
   // Consuming JavaScript Fetch API, receiving data from a server with async & await function
@@ -60,13 +60,13 @@ export default class Leaderboard {
       if (result.length) {
         result.sort((a, b) => parseFloat(b.score) - parseFloat(a.score)).forEach((score) => {
           scores += `
-          <li>${score.user} :  ${score.score}</li>
+          <li>${score.user}:  ${score.score}</li>
         `;
         });
         this.list.innerHTML = scores;
       } else {
         this.list.innerHTML += `
-        <li class="no-score">No Data to Display</li>
+        <li class="no-score">List is empty, please add a player.</li>
       `;
       }
     }
