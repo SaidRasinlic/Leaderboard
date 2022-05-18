@@ -19,7 +19,7 @@ export default class Leaderboard {
 
   // Create game with new name and send request to the following URL to load data
   static createGame = async () => {
-    const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+    const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/OF1KU91gWCdUZlF7oiDJ';
     const result = await fetch(`${requestURL}/games/`, {
       method: 'POST',
       body: JSON.stringify({
