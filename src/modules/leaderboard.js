@@ -11,6 +11,7 @@ export default class Leaderboard {
   // Get game ID and cut the extra text with regex matcher (we only need ID)
   static getGameID = async () => {
     const namedId = await this.createGame();
+    console.log(nameId);
     const reGex = /(?<=Game with ID: ).+(?= )/gi;
     const id = namedId.result.match(reGex)[0];
     return id;
