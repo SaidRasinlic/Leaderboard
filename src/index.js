@@ -10,7 +10,7 @@ let id = '';
 // Get game ID from Local Storage, if no game ID is created, create it!
 window.onload = async () => {
   if (!localStorage.getItem('test')) {
-    id = await Leaderboard.getGameID();
+    id = await Leaderboard.createGame();
     const reGex = /(?<=Game with ID: ).+(?= )/gi;
     id = id.result.match(reGex).toString();
     localStorage.setItem('test', id);

@@ -13,12 +13,12 @@ export default class Leaderboard {
   // 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
   // Get game ID and cut the extra text with regex matcher (we only need ID)
-  static getGameID = async () => {
-    const namedId = this.createGame();
-    // const reGex = /(?<=Game with ID: ).+(?= )/gi;
-    // const id = namedId.result.match(reGex)[0];
-    return namedId;
-  };
+  // static getGameID = async () => {
+  //   const namedId = this.createGame();
+  //   const reGex = /(?<=Game with ID: ).+(?= )/gi;
+  //   const id = namedId.result.match(reGex)[0];
+  //   return id;
+  // };
 
   // Create game with new name and send request to the following URL to load data
   static createGame = async () => {
