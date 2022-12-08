@@ -8,11 +8,13 @@ export default class Leaderboard {
   // Get ul from plain html to dynamically manipulate it
   static list = document.getElementById('scores-list');
 
-  static requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+  static requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+
+  // 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
   // Get game ID and cut the extra text with regex matcher (we only need ID)
   static getGameID = async () => {
-    const namedId = 'OF1KU91gWCdUZlF7oiDJ';
+    const namedId = this.createGame();
     // const reGex = /(?<=Game with ID: ).+(?= )/gi;
     // const id = namedId.result.match(reGex)[0];
     return namedId;
@@ -21,14 +23,18 @@ export default class Leaderboard {
   // Create game with new name and send request to the following URL to load data
   static createGame = async () => {
     const result = await fetch(`${this.requestURL}/games/`, {
+
       method: 'POST',
+
       body: JSON.stringify({
         name: 'Catch the Bugs',
       }),
+
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
     })
+
       .then((response) => response.json());
     return result;
   };

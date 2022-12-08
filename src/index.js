@@ -11,6 +11,8 @@ let id = '';
 window.onload = async () => {
   if (!localStorage.getItem('test')) {
     id = await Leaderboard.getGameID();
+    const reGex = /(?<=Game with ID: ).+(?= )/gi;
+    id = id.result.match(reGex).toString();
     localStorage.setItem('test', id);
   } else {
     id = localStorage.getItem('test');
